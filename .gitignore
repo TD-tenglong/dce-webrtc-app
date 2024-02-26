@@ -1,0 +1,12 @@
+node_modules/
+dist/
+yarn-error.log
+coverage
+.DS_Store
+.vscode/*
+.DS_Store
+.idea
+packages/*/tsconfig.tsbuildinfo
+dependency-check-bin/
+dependency-check-reports/
+stats.html
