@@ -377,10 +377,10 @@
   resolved "https://hub.talkdeskapp.com:8443/repository/talkdesk-npm/@cobalt-marketplace/react-drag-and-drop/-/react-drag-and-drop-2.0.2.tgz#b32b44a6b032d65d1b9486c7b94eaa0b181a07e6"
   integrity sha512-4JCtndnC8rHogzt0dhVHf06qGsexrDUfZgLp0LXbuZ/083TTn45pW0QNkqB9dPpVnQp32rhFgGb3CkN68H94RA==
 
-"@cobalt-marketplace/react-dropdown@^2.0.4":
-  version "2.1.1"
-  resolved "https://hub.talkdeskapp.com:8443/repository/talkdesk-npm/@cobalt-marketplace/react-dropdown/-/react-dropdown-2.1.1.tgz#f31f36aa0eb0f4f35f5a243515589f3a8a30bd53"
-  integrity sha512-VanBjc1lcmiWtpNJ8EfaDId9Nbyu0MQnbHc5JCN6HnLjleArh82OIWdPupV/dxOAZ7ERSejSQBTyAzmjLTdoOw==
+"@cobalt-marketplace/react-dropdown@^2.1.2":
+  version "2.1.2"
+  resolved "https://hub.talkdeskapp.com:8443/repository/talkdesk-npm/@cobalt-marketplace/react-dropdown/-/react-dropdown-2.1.2.tgz#a558792d5c622ca37e37671410254fd6a524753f"
+  integrity sha512-d/VU8T47MVxZa29SmNTZdrZg+LFrTwIPxKyQyWvemaM6lw1M63Xte7XiG8xb7FVTz8LUcXa4C0Bb/2nXP1zQ2g==
 
 "@cobalt-marketplace/react-empty-widget@^1.2.2":
   version "1.2.2"
