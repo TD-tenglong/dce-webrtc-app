@@ -1,0 +1,38 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.endImage{
+  width: 30vw;
+  height: 30vh;
+  background-image: url('@/assets/images/rejoin.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  align-items: center;
+  flex-direction: row;
+
+  & > button {
+    margin-left: 12px;
+  }
+}

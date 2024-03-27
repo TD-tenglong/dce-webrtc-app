@@ -1,0 +1,14 @@
+{
+  "name": "validate-pr",
+  "version": "0.0.0",
+  "description": "Responsible for validating PR pipelines",
+  "license": "ISC",
+  "devDependencies": {
+    "@octokit/core": "3.5.1",
+    "octokit": "1.5.0",
+    "@commitlint/lint": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/load": "^12.1.4",
+    "commitlint-plugin-function-rules": "^1.7.1"
+  }
+}

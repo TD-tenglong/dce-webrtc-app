@@ -1,0 +1,12 @@
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 16px;
+}
+
+.DropDown {
+  > div {
+    padding-left: 24px;
+  }
+}

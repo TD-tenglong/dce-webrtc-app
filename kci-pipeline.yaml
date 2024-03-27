@@ -1,0 +1,75 @@
+Build phase:
+  stages:
+    Build STG:
+      steps:
+        - k8s-ci/build.sh stg
+      when:
+        - staging
+
+    Build QA:
+      steps:
+        - k8s-ci/build.sh qa
+      when:
+        - main
+        - PR
+    Build PRD:
+      steps:
+        - k8s-ci/build.sh prd
+      when:
+        - TAG
+    Publish to Nexus:
+      type: raw_push
+      when:
+        - staging
+        - main
+        - PR
+        - TAG
+
+Deploy phase:
+  stg:
+    deploy mode: automatic
+    when:
+      - staging
+    stages:
+      Upload STG:
+        type: deploy_s3
+        buckets:
+          - config_env_vars:
+              formats:
+                - javascript
+                - json
+  qa:
+    deploy mode: automatic
+    stages:
+      Upload QA:
+        type: deploy_s3
+        when:
+          - main
+        buckets:
+          - config_env_vars:
+              formats:
+                - javascript
+                - json
+      Upload to S3 bucket (PR-KEY):
+        type: deploy_s3
+        when:
+          - PR
+        upload_latest: false
+        buckets:
+          - bucket path: ${{APP_NAME}}/${{PR_KEY}}
+            config_env_vars:
+              formats:
+                - javascript
+                - json
+  prd:
+    deploy mode: automatic
+    when:
+      - main
+    stages:
+      Upload PRD:
+        type: deploy_s3
+        buckets:
+          - config_env_vars:
+              formats:
+                - javascript
+                - json

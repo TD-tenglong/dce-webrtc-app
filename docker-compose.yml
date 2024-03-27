@@ -1,0 +1,58 @@
+version: '3.4'
+
+services:
+  common: &BASE
+    image: dce-webrtc-app:latest
+    build:
+      context: .
+      args:
+        - BUNDLE_GITHUB__COM=${BUNDLE_GITHUB__COM}
+
+  dev:
+    <<: *BASE
+    command: yarn start
+
+  type-checking:
+    <<: *BASE
+    command: yarn type-checking
+
+  build_stg:
+    <<: *BASE
+    command: yarn build:stg
+
+  build_qa:
+    <<: *BASE
+    command: yarn build:qa
+
+  build_prd:
+    <<: *BASE
+    command: yarn build:prd
+
+  lint:
+    <<: *BASE
+    command: yarn lint
+
+  tests:
+    <<: *BASE
+    command: 'yarn tests:coverage'
+    volumes:
+      - ./coverage:/usr/src/app/coverage
+
+  dependency-check:
+    <<: *BASE
+    command: yarn owasp
+    volumes:
+      - ./dependency-check-reports:/usr/src/app/dependency-check-reports
+    environment:
+      - NODE_OPTIONS=--unhandled-rejections=warn
+
+  sonarqube:
+    image: hub.talkdeskapp.com/sonarsource/sonar-scanner-cli
+    command: sonar-scanner -Dproject.settings=/usr/src/app/sonar-project.properties
+    volumes:
+      - ./:/usr/src/app
+    environment:
+      - SONAR_HOST_URL=${SONAR_HOST_URL}
+      - SONAR_LOGIN=${SONAR_AUTH_TOKEN}
+      - SONAR_APPNAME=${APP_NAME}
+      - SONAR_BRANCH=${GIT_BRANCH}

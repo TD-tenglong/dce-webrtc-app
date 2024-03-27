@@ -1,0 +1,70 @@
+{
+  "primary200": {
+    "css": "--primary-200",
+    "value": "var(--purple-200)"
+  },
+  "primary300": {
+    "css": "--primary-300",
+    "value": "var(--purple-300)"
+  },
+  "primary400": {
+    "css": "--primary-400",
+    "value": "var(--purple-400)"
+  },
+  "primary500": {
+    "css": "--primary-500",
+    "value": "var(--purple-500)"
+  },
+  "primary600": {
+    "css": "--primary-600",
+    "value": "var(--purple-600)"
+  },
+  "primary700": {
+    "css": "--primary-700",
+    "value": "var(--purple-700)"
+  },
+  "primary800": {
+    "css": "--primary-800",
+    "value": "var(--purple-800)"
+  },
+  "primary900": {
+    "css": "--primary-900",
+    "value": "var(--purple-900)"
+  },
+  "secondary200": {
+    "css": "--secondary-200",
+    "value": "var(--basic-200)"
+  },
+  "secondary300": {
+    "css": "--secondary-300",
+    "value": "var(--basic-300)"
+  },
+  "secondary400": {
+    "css": "--secondary-400",
+    "value": "var(--basic-400)"
+  },
+  "secondary500": {
+    "css": "--secondary-500",
+    "value": "var(--basic-500)"
+  },
+  "secondary600": {
+    "css": "--secondary-600",
+    "value": "var(--basic-600)"
+  },
+  "secondary700": {
+    "css": "--secondary-700",
+    "value": "var(--basic-700)"
+  },
+  "secondary800": {
+    "css": "--secondary-800",
+    "value": "var(--basic-800)"
+  },
+  "secondary900": {
+    "css": "--secondary-900",
+    "value": "var(--basic-900)"
+  },
+  "secondary100": {
+    "css": "--secondary-100",
+    "value": "var(--basic-100)"
+  }
+}

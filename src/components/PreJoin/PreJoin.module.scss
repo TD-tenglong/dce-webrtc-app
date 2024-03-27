@@ -1,0 +1,70 @@
+
+@import '../../assets/styles/base.module.scss';
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto !important;
+  height: 100%;
+}
+
+.videoPreview {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  height: 506px;
+}
+
+video {
+  border-radius: 8px;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.PrejoinRight {
+  padding: 4rem;
+}
+
+.PrejoinRighHead {
+  padding: 1rem;
+}
+
+.PrejoinNow {
+  width: 100%;
+}
+
+.LabeledIcon {
+  border-radius: 4px;
+  padding-left: 4px;
+  border: 2px solid var(--secondary-400);
+  max-width: 40px;
+}
+
+.deviceSwitch {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  // width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  & > button {
+    box-sizing: border-box;
+    width: 40px;
+    margin-right: 4px;
+  }
+}
+
+// Tablet styles
+@media (max-width: $breakpoint-tablet) {
+  .videoPreview {
+    height: 348px;
+  }
+  .PrejoinRight{
+    padding: 1rem;
+  }
+}
