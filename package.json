@@ -18,7 +18,7 @@
     "@cobalt-marketplace/dropdown-utils": "^2.1.0",
     "@cobalt-marketplace/react-copy-to-clipboard": "^1.0.2",
     "@cobalt-marketplace/react-drag-and-drop": "^2.0.2",
-    "@cobalt-marketplace/react-dropdown": "^2.0.4",
+    "@cobalt-marketplace/react-dropdown": "^2.1.2",
     "@cobalt-marketplace/react-empty-widget": "^1.2.2",
     "@cobalt-marketplace/react-form-control": "^1.0.5",
     "@cobalt-marketplace/react-header": "1.0.1",
