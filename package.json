@@ -13,7 +13,7 @@
     "build:prd": "vite build --mode production"
   },
   "dependencies": {
-    "@atlas/cli": "1.31.1",
+    "@atlas/cli": "1.35.0",
     "@atlas/sdk": "^0.36.0",
     "@cobalt-marketplace/dropdown-utils": "^2.1.0",
     "@cobalt-marketplace/react-copy-to-clipboard": "^1.0.2",
